@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "Header Header Header"
+    "Content Content Content"
+    "Footer Footer Footer";
+}
+#Header{
+    grid-area: Header;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New';
+    display: grid;
+    grid-template-areas: 
+    "Logo Menu TimKiem"
+    "Banner Banner Banner";
+    grid-template-columns: 1fr 2fr 1.5fr;
+}
+#Hero{
+    display: inline-block;
+}
+#Logo{
+    grid-area: Logo;
+    display: flex;
+    width: 300px;
+}
+#Logo h1{
+    padding: 30px;
+} 
+#tren{
+    display: flex;
+}
+#Menu{
+    width: 700px;
+    grid-area: Menu;
+}
+#Menu ul{
+    list-style: none;
+    display: flex;
+}
+#Menu li{
+    padding: 30px 10px;
+    width: 90px;
+}
+#TimKiem{
+    grid-area: TimKiem;
+}
+#TimKiem button{
+    margin-left: 35px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(241, 140, 8);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Courier New';
+}
+#Banner{
+    height: 350px;
+    grid-area: Banner;
+    background-image: url("https://xpressrow.com/html/cafenod/assets/images/breadcrumb/breadcrumb_bg_01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    border: 0px;
+}
+#Banner h1{
+    padding: 100px 100px 0px 100px;
+    font-size: 60px;
+}
+#Banner p{
+    padding: 0px 100px 100px 100px;
+    font-size: 30px;
+}
+#Content{
+    background-color: #e8e8e8;
+    width: 100vw;
+}
+#Con{
+    margin: 100px 200px;
+    grid-area: Content;
+    display: grid;
+    grid-template-areas: 
+    "EMAIL LOCATION PHONE"
+    "nhap nhap nhap"
+    "subject subject subject"
+    "message message message";
+    width: 1000px;
+    background-color: #ffff;
+    padding: 40px;
+}
+
+#Content h2{
+    font-family: 'Courier New';
+}
+#Content p{
+    font-family: 'Courier New';
+    color:rgb(110, 112, 114);
+}
+#Con input{
+    height: 50px;
+    padding-left: 20px;
+}
+#nhap{
+    display: flex;
+    grid-area: nhap;
+}
+input{
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+}
+textarea{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+}
+#EMAIL{
+    display: flex;
+    margin-top: 30px;
+    grid-area: EMAIL;
+}
+#LOCATION{
+    display: flex;
+    margin-top: 30px;
+    grid-area: LOCATION;
+}
+#PHONE{
+    display: flex;
+    margin-top: 30px;
+    grid-area: PHONE;
+}
+#name{
+    margin-top: 30px;
+    grid-area: name;
+}
+#mail{
+    margin-top: 30px;
+    grid-area: mail;
+}
+#subject{
+    margin-top: 30px;
+    grid-area: subject;
+
+}
+#message{
+    margin-top: 30px;
+    grid-area: message;
+}
+#Con button{
+    margin-top: 30px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(241, 140, 8);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Courier New';
+}
+#Con {
+    justify-content: center;
+    align-items: center;
+}
+#Footer{
+    padding: 100px;
+    grid-area: Footer;
+    background-image: url("https://xpressrow.com/html/cafenod/assets/images/breadcrumb/breadcrumb_bg_01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #ffff;
+    background-color: rgb(27, 20, 20);
+}
+#FHeader{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#Footer h1{
+    font-family: 'Courier New';
+}
+#FLogo{
+    display: flex;
+}
+#FLogo h1{
+    margin-left: 20px;
+}
+#Footer input {
+    margin-top: 20px;
+    background-color: #333030;
+    width: 150px;
+    border: 0px;
+    padding: 18px;
+}
+#ThongTin{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+#imgLienLac{
+    display: flex;
+}
+#lich{
+    display: flex;
+}
+#LienLac{
+    margin-left: 70px;
+}
+#OPENING{
+    margin-left: 70px;
+} 
+#TinTuc{
+    margin-left: 70px;
+}
